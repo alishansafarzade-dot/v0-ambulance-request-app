@@ -4,7 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { LanguageProvider } from "@/lib/language-context"
-import { SidebarNav } from "@/components/sidebar-nav"
+import RootLayoutClient from "./RootLayoutClient"
 
 const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -41,10 +41,7 @@ export default function RootLayout({
     <html lang="az">
       <body className={`font-sans antialiased bg-gray-50`}>
         <LanguageProvider>
-          <div className="flex">
-            <SidebarNav />
-            <main className="flex-1 ml-64 min-h-screen">{children}</main>
-          </div>
+          <RootLayoutClient>{children}</RootLayoutClient>
         </LanguageProvider>
         <Analytics />
       </body>

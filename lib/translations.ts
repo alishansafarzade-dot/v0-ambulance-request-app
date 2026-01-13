@@ -105,6 +105,14 @@ export const translations = {
     statusDistribution: "Statuslar üzrə paylanma",
     fastestOperators: "Ən tez reaksiya verənlər",
     slowestOperators: "Ən gec reaksiya verənlər",
+
+    // Login-related translations
+    login: "Daxil ol",
+    password: "Şifrə",
+    loginTitle: "Sistem daxil ol",
+    loginSubtitle: "FİN və şifrənizi daxil edin",
+    invalidCredentials: "FİN və ya şifrə yanlışdır",
+    required: "Bu sahə tələb olunur",
   },
   ru: {
     // Navigation & General
@@ -207,6 +215,15 @@ export const translations = {
     requestsByReason: "Запросы по причинам",
     requestsByRegion: "Запросы по регионам",
     statusDistribution: "Распределение по статусам",
+
+    // Login-related translations
+    login: "Войти",
+    fin: "ФИН",
+    password: "Пароль",
+    loginTitle: "Вход в систему",
+    loginSubtitle: "Введите ваш ФИН и пароль",
+    invalidCredentials: "Неверный ФИН или пароль",
+    required: "Это поле обязательно",
   },
   en: {
     // Navigation & General
@@ -309,6 +326,15 @@ export const translations = {
     requestsByReason: "Requests by Reason",
     requestsByRegion: "Requests by Region",
     statusDistribution: "Status Distribution",
+
+    // Login-related translations
+    login: "Login",
+    fin: "FIN",
+    password: "Password",
+    loginTitle: "System Login",
+    loginSubtitle: "Enter your FIN and password",
+    invalidCredentials: "Invalid FIN or password",
+    required: "This field is required",
   },
 } as const
 
