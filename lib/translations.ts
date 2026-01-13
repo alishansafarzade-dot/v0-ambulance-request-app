@@ -11,11 +11,11 @@ export const translations = {
     viewDetails: "Ətraflı bax",
 
     // Navigation
-    dashboard: "Əsas səhifə",
+    dashboard: "Statistika",
     requests: "Sorğular",
     hospitals: "Xəstəxanalar",
     users: "İstifadəçilər",
-    crews: "Təcili yardım briqadaları",
+    crews: "Təcili yardım heyəti",
 
     // User Management
     role: "Rol",
@@ -28,16 +28,16 @@ export const translations = {
     male: "Kişi",
     female: "Qadın",
     hospital: "Xəstəxana",
-    crew: "Briqada",
+    crew: "Heyət",
 
     // Hospital & Crew
     addHospital: "Xəstəxana əlavə et",
     editHospital: "Xəstəxananı redaktə et",
     hospitalName: "Xəstəxananın adı",
     address: "Ünvan",
-    crewName: "Briqadanın adı",
-    members: "Briqada üzvləri",
-    addCrew: "Briqada əlavə et",
+    crewName: "Heyətin adı",
+    members: "Heyət üzvləri",
+    addCrew: "Heyət əlavə et",
 
     // Request List
     dispatcherName: "Yönləndirən",
@@ -118,11 +118,11 @@ export const translations = {
     viewDetails: "Подробнее",
 
     // Navigation
-    dashboard: "Главная",
+    dashboard: "Статистика",
     requests: "Запросы",
     hospitals: "Больницы",
     users: "Пользователи",
-    crews: "Бригады скорой помощи",
+    crews: "Команда скорой помощи",
 
     // User Management
     role: "Роль",
@@ -135,16 +135,16 @@ export const translations = {
     male: "Мужчина",
     female: "Женщина",
     hospital: "Больница",
-    crew: "Бригада",
+    crew: "Команда",
 
     // Hospital & Crew
     addHospital: "Добавить больницу",
     editHospital: "Редактировать больницу",
     hospitalName: "Название больницы",
     address: "Адрес",
-    crewName: "Название бригады",
-    members: "Участники бригады",
-    addCrew: "Добавить бригаду",
+    crewName: "Название команды",
+    members: "Участники команды",
+    addCrew: "Добавить команду",
 
     // Request List
     dispatcherName: "Диспетчер",
@@ -220,11 +220,11 @@ export const translations = {
     viewDetails: "View Details",
 
     // Navigation
-    dashboard: "Dashboard",
+    dashboard: "Statistics",
     requests: "Requests",
     hospitals: "Hospitals",
     users: "Users",
-    crews: "Ambulance Crews",
+    crews: "Emergency Teams",
 
     // User Management
     role: "Role",
@@ -237,16 +237,16 @@ export const translations = {
     male: "Male",
     female: "Female",
     hospital: "Hospital",
-    crew: "Crew",
+    crew: "Team",
 
     // Hospital & Crew
     addHospital: "Add Hospital",
     editHospital: "Edit Hospital",
     hospitalName: "Hospital Name",
     address: "Address",
-    crewName: "Crew Name",
-    members: "Crew Members",
-    addCrew: "Add Crew",
+    crewName: "Team Name",
+    members: "Team Members",
+    addCrew: "Add Team",
 
     // Request List
     dispatcherName: "Dispatcher",
