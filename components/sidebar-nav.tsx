@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { usePathname } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { useLanguage } from "@/lib/language-context"
 import { LayoutDashboard, ClipboardList, Hospital, Users, Truck, Siren, LogOut } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -10,6 +11,7 @@ import { LanguageSelector } from "./language-selector"
 export function SidebarNav() {
   const { t } = useLanguage()
   const pathname = usePathname()
+  const router = useRouter()
 
   const navItems = [
     { href: "/", label: t("dashboard"), icon: LayoutDashboard },
@@ -18,6 +20,12 @@ export function SidebarNav() {
     { href: "/users", label: t("users"), icon: Users },
     { href: "/crews", label: t("crews"), icon: Truck },
   ]
+
+  const handleLogout = () => {
+    localStorage.removeItem("isLoggedIn")
+    localStorage.removeItem("userFin")
+    router.push("/login")
+  }
 
   return (
     <aside className="fixed left-0 top-0 h-screen w-64 border-r bg-white flex flex-col z-50">
@@ -52,7 +60,10 @@ export function SidebarNav() {
           <LanguageSelector />
         </div>
 
-        <button className="flex items-center gap-3 px-3 py-2 w-full rounded-md text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors">
+        <button
+          onClick={handleLogout}
+          className="flex items-center gap-3 px-3 py-2 w-full rounded-md text-gray-600 hover:bg-gray-50 hover:text-red-600 transition-colors"
+        >
           <LogOut className="h-5 w-5" />
           <span>Çıxış</span>
         </button>
